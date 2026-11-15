@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8"/>
+        <title>谢谢惠顾</title>
+        <style>
+        .box{
+        display:flex;
+        gap:30px;
+        align-items:flex-start;
+        }
+        table,td{
+        border:1px solid white;
+        border-collapse:collapse;
+        border-radius:10px;
+        }
+        td{
+        padding:50px;
+        color:white;
+        cursor:pointer;
+        }
+        h1,h2,table,p{
+        text-align:center;
+        }
+        #show img{
+        width:400px;
+        display:block;
+        margin:10px 0;
+        }
+        #show{
+        min-height:150px;
+        font-family:"KaiTi";
+        }
+        </style>
+    </head>
+<body>
+
+<h1>谢谢你千里迢迢找到了我！</h1>
+<h2>选一个你喜欢的颜色吧：（点击颜色标号）</h2>
+<div class="box">
+  <table>
+    <tr>
+      <td style="background-color:RGBA(164,98,0,0.6);" onclick="show('图片/bird.jpg','“如果你是条船，漂泊就是你的命运，<br>可别靠岸。”')">1</td>
+      <td style="background-color:#F2C034;"onclick="show('图片/nailong.jpg','“当我小的时候我什么都爱。<br>当我长大了，我忘记了我其实什么都爱。”')">2</td>
+      <td style="background-color:RGBA(255,130,46,0.8);"onclick="show('图片/balloon.jpg','“我急切，滚烫<br>配得上慢慢活着<br>也配得上突然死亡”')">3</td>
+    </tr>
+    <tr>
+      <td style="background-color:RGBA(149,210,0,0.7);"onclick="show('图片/May.jpg','“我们的心要祝福世界，<br>像一只小小蜜蜂来到春天。”')">4</td>
+      <td style="background-color:RGBA(96,108,40,0.8);"onclick="show('图片/playingmusic.jpg','“但我注定命途多舛，<br>还要长久地歌唱... ...”')">5</td>
+      <td style="background-color:#355953;"onclick="show('图片/train.jpg','“你从远方来  我到远方去<br>遥远的路程经过这里<br>天空一无所有<br>为何给我安慰”')">6</td>
+    </tr>
+    <tr>
+      <td style="background-color:RGBA(255,230,176,0.8);"onclick="show('图片/cat.jpg','“我总觉得好运气在等着我，<br>总觉得有什么新鲜、美妙的事向我走近了。”')">7</td>
+      <td style="background-color:RGBA(12,203,166,0.7);"onclick="show('图片/flower.jpg','“山峦宛似倾倒的天空，一片树木饮着小溪，<br>一切在那里，对处境感到幸运；面对不在那里的我们；<br>我们被愤怒、被仇恨、被爱情、被死神生吞。”')">8</td>
+      <td style="background-color:RGBA(91,101,166,0.2);"onclick="show('图片/angel.jpg','“Whoever saves one life saves the world entire.”')">9</td>
+    </tr>
+    <tr>
+      <td style="background-color:#9799CC;"onclick="show('图片/harbour.jpg','“灰色的烟雾模糊了遥远的星座，<br>眼前的一切失去了历史和名字。<br>世界只是一些影影绰绰的温柔。<br>河还是原来的河。人还是原来的人。”')">10</td>
+      <td style="background-color:#A6D0E9;"onclick="show('图片/earth.jpg','“夜晚静静地抵达黎明。”')">11</td>
+      <td style="background-color:#4B7095;"onclick="show('图片/nightsea.jpg','“我像那夜间之路，正悄悄地听着记忆的足音。”')">12</td>
+    </tr>
+    <tr>
+      <td style="background-color:#E8425F;"onclick="show('图片/qianxun.jpg','“我觉得有勇气往世间去冒险，<br>承担浮世的幸福、浮世的苦难，<br>跟暴风雨激战，<br>听到沉舟的嘎嘎声也不胆寒。”')">13</td>
+      <td style="background-color:#E38968;"onclick="show('图片/spring.jpg','“世界散发<br>昨日的甜美。<br>芳香总是长久流连。<br><br>你打开窗户<br>所有的春天<br>和这个春天一起涌来。”')">14</td>
+      <td style="background-color:#581E15;"onclick="show('图片/film.png','“即使明知是谎言，<br>也会选择去相信”')">15</td>
+    </tr>
+    <tr>
+      <td style="background-color:#A0A0A0;"onclick="show('图片/wild.jpg','“苍苍晚色，临渊小立。”')">16</td>
+      <td style="background-color:RGBA(0,28,64,0.8);"onclick="show('图片/thelittleprince.jpg','“It is only with the heart<br>that one can see rightly;<br>what is essential is<br>invisible to the eye.”')">17</td>
+      <td style="background-color:#404040;"onclick="show('图片/moon.jpg','“生与死，光和暗，爱和苦，原来都这般接近。”')">18</td>
+    </tr>
+  </table>
+  <div id="show">
+  </div>  
+</div>
+
+<script>
+  function show(imgUrl,text){
+    document.getElementById('show').innerHTML=
+      '<img src="'+imgUrl+'"alt="对不起图片走丢啦">'+
+      '<p>'+text+'</p>';
+  }
+</script>
+
+<p>附作业页面：（套娃？）</p>
+<iframe src="index.html" width=1000 height=300></iframe>
+</body>
+</html>
